@@ -141,6 +141,29 @@ section {
   text-decoration: none;
 }
 
+.grupo-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+.botao-secundario {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--raio-pequeno);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background: transparent;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.botao-secundario:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
 .navegacao {
   position: sticky;
   top: 0;

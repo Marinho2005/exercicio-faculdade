@@ -15,9 +15,14 @@ function Cabecalho() {
           <p className="cabecalho-descricao">
             Portfólio com as 30 atividades de HTML, CSS, React, Git e Vercel.
           </p>
-          <a className="botao" href="#atividades">
-            Ver atividades
-          </a>
+          <div className="grupo-botoes">
+            <a className="botao" href="#atividades">
+              Ver atividades
+            </a>
+            <a className="botao-secundario" href="#sobre">
+              Sobre mim
+            </a>
+          </div>
         </div>
       </div>
     </header>
