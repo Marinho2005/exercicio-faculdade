@@ -1,4 +1,5 @@
 import Cabecalho from './components/Cabecalho'
+import Navegacao from './components/Navegacao'
 import Rodape from './components/Rodape'
 import './styles/global.css'
 
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <Cabecalho />
+      <Navegacao />
       <main>
         <section id="inicio" aria-labelledby="titulo-inicio">
           <h2 id="titulo-inicio">Início</h2>
