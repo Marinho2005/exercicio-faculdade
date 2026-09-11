@@ -192,3 +192,82 @@ section {
   color: #93c5fd;
   text-decoration: none;
 }
+
+.lista-cartoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card-atividade {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+  flex: 1 1 260px;
+  max-width: 380px;
+  padding: var(--espaco-3);
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card-atividade:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-forte);
+}
+
+.card-atividade:focus-within {
+  box-shadow: var(--sombra-forte);
+}
+
+.card-numero {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--cor-primaria);
+  letter-spacing: 0.05em;
+}
+
+.card-atividade h3 {
+  margin: 0;
+  font-size: var(--tamanho-titulo-card);
+}
+
+.card-descricao {
+  margin: 0;
+  color: var(--cor-texto-suave);
+  font-size: 0.95rem;
+}
+
+.card-tecnologia {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--cor-primaria-suave);
+  color: var(--cor-primaria-escura);
+}
+
+.card-botao {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border-radius: var(--raio-pequeno);
+  background: var(--cor-primaria);
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.card-botao:hover {
+  background: var(--cor-primaria-escura);
+}
