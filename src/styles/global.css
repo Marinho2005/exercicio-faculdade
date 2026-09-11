@@ -22,3 +22,55 @@ img {
 main {
   display: block;
 }
+
+.container {
+  width: min(1140px, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.cabecalho {
+  background: linear-gradient(135deg, #1e3a8a 0%, #4f46e5 100%);
+  color: #ffffff;
+  padding: 3rem 0;
+}
+
+.cabecalho-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cabecalho-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  flex-shrink: 0;
+}
+
+.cabecalho-texto h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 2.25rem;
+}
+
+.cabecalho-curso {
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.cabecalho-descricao {
+  margin: 0 0 1rem 0;
+  max-width: 60ch;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e3a8a;
+  font-weight: 700;
+  text-decoration: none;
+}
