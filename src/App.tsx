@@ -3,6 +3,7 @@ import FormularioContato from './components/FormularioContato'
 import Navegacao from './components/Navegacao'
 import Rodape from './components/Rodape'
 import SecaoAtividades from './components/SecaoAtividades'
+import Sobre from './components/Sobre'
 import './styles/global.css'
 
 function App() {
@@ -20,11 +21,7 @@ function App() {
 
         <SecaoAtividades />
 
-        <section id="sobre" aria-labelledby="titulo-sobre">
-          <div className="container">
-            <h2 id="titulo-sobre">Sobre</h2>
-          </div>
-        </section>
+        <Sobre />
 
         <section id="contato" aria-labelledby="titulo-contato">
           <div className="container">
