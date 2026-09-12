@@ -1,35 +1,69 @@
-# React + TypeScript + Vite
+# Portfólio de Atividades de Desenvolvimento Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Portfólio acadêmico de Victor Marinho com 30 atividades sobre HTML, CSS, React, TypeScript, Git e publicação na Vercel. A interface permite filtrar e buscar atividades, acompanhar o progresso e abrir detalhes de cada etapa.
 
-Currently, two official plugins are available:
+## Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19
+- TypeScript
+- Vite
+- CSS responsivo, Flexbox e Grid
+- Git e GitHub
+- Vercel
 
-## React Compiler
+## Pré-requisitos
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- Node.js 20 ou superior
+- npm 10 ou superior
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Como executar
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+git clone git@github.com:Marinho2005/faculdade.git
+cd faculdade
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Acesse o endereço exibido pelo Vite no terminal.
+
+## Comandos
+
+```bash
+npm run dev      # servidor de desenvolvimento
+npm run build    # verificação TypeScript e build de produção
+npm run lint     # análise estática com Oxlint
+npm run preview  # visualização local do build
+```
+
+## Estrutura principal
+
+```text
+src/
+├── assets/       # imagens do projeto
+├── components/   # componentes React da interface
+├── data/         # dados tipados das 30 atividades
+├── styles/       # estilos globais e temas
+├── App.tsx       # composição da página
+└── main.tsx      # ponto de entrada
+```
+
+## Recursos implementados
+
+- 30 cartões gerados por dados tipados
+- Filtro por tecnologia e busca textual
+- Contador e barra de progresso acessível
+- Modal de detalhes com suporte a teclado
+- Formulário controlado com validação
+- Tema claro/escuro persistido no `localStorage`
+- Layout responsivo e navegação acessível
+
+## Links
+
+- [Repositório no GitHub](https://github.com/Marinho2005/faculdade)
+- Aplicação na Vercel: será adicionada após a publicação
+- [Perfil do autor no GitHub](https://github.com/Marinho2005)
+
+## Autor
+
+Victor Marinho, estudante de Desenvolvimento Web, 3º período.
