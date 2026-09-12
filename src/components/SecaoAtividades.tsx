@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { atividades } from '../data/atividades'
+import { atividades, type Atividade } from '../data/atividades'
 import CardAtividade from './CardAtividade'
 import ContadorProgresso from './ContadorProgresso'
+import ModalAtividade from './ModalAtividade'
 
 const tecnologias = ['Todas', 'Git', 'HTML', 'CSS', 'React', 'Vercel'] as const
 type FiltroTecnologia = (typeof tecnologias)[number]
@@ -9,6 +10,13 @@ type FiltroTecnologia = (typeof tecnologias)[number]
 function SecaoAtividades() {
   const [filtro, setFiltro] = useState<FiltroTecnologia>('Todas')
   const [termo, setTermo] = useState('')
+  const [atividadeAberta, setAtividadeAberta] = useState<Atividade | null>(null)
+  const [focoRetorno, setFocoRetorno] = useState<HTMLElement | null>(null)
+
+  function abrirModal(atividade: Atividade) {
+    setFocoRetorno(document.activeElement as HTMLElement | null)
+    setAtividadeAberta(atividade)
+  }
 
   /* progresso é derivado do array original — nada foi estimado/chutado */
   const totalAtividades = atividades.length
@@ -86,12 +94,19 @@ function SecaoAtividades() {
                 tecnologia={atividade.tecnologia}
                 status={atividade.status}
                 link={atividade.link}
-                onVer={() => {}}
+                onVer={() => abrirModal(atividade)}
               />
             ))}
           </ul>
         )}
       </div>
+      {atividadeAberta && (
+        <ModalAtividade
+          atividade={atividadeAberta}
+          aoFechar={() => setAtividadeAberta(null)}
+          focoRetorno={focoRetorno}
+        />
+      )}
     </section>
   )
 }
