@@ -359,7 +359,7 @@ export const atividades: Atividade[] = [
     numero: 29,
     titulo: 'Enviar ao repositório remoto',
     descricao:
-      'Associei o repositório remoto e enviei a branch main e a tag v1.0.0 ao GitHub.',
+      'Associei o repositório remoto e enviei a branch master e a tag v1.0.0 ao GitHub.',
     tecnologia: 'Git',
     status: 'Concluída',
     aprendizagem:
@@ -374,10 +374,11 @@ export const atividades: Atividade[] = [
     descricao:
       'Importei o repositório na Vercel, confirmei o build e publiquei, testando menu, filtros, busca, modal e formulário.',
     tecnologia: 'Vercel',
-    status: 'Planejada',
+    status: 'Concluída',
     aprendizagem:
       'Deploy na Vercel é contínuo: cada push gera uma publicação nova.',
     evidencia:
-      'Card 30 com o link da aplicação publicada e o checklist final de testes.',
+      'Aplicação publicada e validada com menu, filtros, busca, modal, formulário e tema.',
+    link: 'https://exercicio-faculdade.vercel.app/',
   },
 ]

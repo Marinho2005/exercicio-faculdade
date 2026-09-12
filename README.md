@@ -61,27 +61,23 @@ src/
 ## Links
 
 - [Repositório no GitHub](https://github.com/Marinho2005/faculdade)
-- Aplicação na Vercel: será adicionada após a publicação
+- [Aplicação publicada na Vercel](https://exercicio-faculdade.vercel.app/)
 - [Perfil do autor no GitHub](https://github.com/Marinho2005)
 
 ## Versionamento
 
-O projeto usa a branch principal `main` e commits pequenos e descritivos. Para revisar o histórico e publicar a versão marcada:
+O projeto usa a branch principal `master` e commits pequenos e descritivos. Para revisar o histórico e publicar a versão marcada:
 
 ```bash
 git status
 git log --oneline
-git push -u origin main
+git push -u origin master
 git push origin v1.0.0
 ```
 
 ## Publicação na Vercel
 
-1. Acesse [vercel.com](https://vercel.com/) e entre com a conta vinculada ao GitHub.
-2. Selecione **Add New > Project** e importe `Marinho2005/faculdade`.
-3. Mantenha o framework **Vite**, o comando de build `npm run build` e o diretório de saída `dist`.
-4. Clique em **Deploy** e teste navegação, filtros, busca, modal, formulário e tema na URL publicada.
-5. Substitua o campo pendente na seção Links e o link da atividade 30 pela URL real.
+O projeto foi importado do GitHub com o framework Vite, comando de build `npm run build` e diretório de saída `dist`. A versão publicada foi validada em [exercicio-faculdade.vercel.app](https://exercicio-faculdade.vercel.app/).
 
 ## Relato final
 
