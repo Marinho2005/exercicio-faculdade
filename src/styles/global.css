@@ -61,6 +61,39 @@
   --sombra-forte: 0 12px 28px -8px rgba(0, 0, 0, 0.55);
 }
 
+.tema-botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  background: var(--cor-superficie);
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-pequeno);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.tema-botao:hover {
+  border-color: var(--cor-primaria);
+  color: var(--cor-primaria);
+}
+
+.tema-botao[aria-pressed='true'] {
+  background: var(--cor-primaria-suave);
+  border-color: var(--cor-primaria);
+  color: var(--cor-primaria-escura);
+}
+
+.tema-botao:focus-visible {
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+
 /* 3. Base e normalização */
 *,
 *::before,
@@ -398,6 +431,31 @@ section {
 .progresso-porcentagem {
   color: var(--cor-primaria);
   font-variant-numeric: tabular-nums;
+}
+
+.progresso-info {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--espaco-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--espaco-2);
+}
+
+.progresso-barra {
+  height: 0.9rem;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progresso-preenchimento {
+  display: block;
+  height: 100%;
+  background: var(--cor-primaria);
+  border-radius: inherit;
+  transition: width 0.3s ease;
 }
 
 /* 10. Filtros e busca */

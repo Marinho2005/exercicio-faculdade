@@ -1,4 +1,5 @@
 import hero from '../assets/hero.png'
+import TemaBotao from './TemaBotao'
 
 function Cabecalho() {
   return (
@@ -16,6 +17,7 @@ function Cabecalho() {
             Portfólio com as 30 atividades de HTML, CSS, React, Git e Vercel.
           </p>
           <div className="grupo-botoes">
+            <TemaBotao />
             <a className="botao" href="#atividades">
               Ver atividades
             </a>
