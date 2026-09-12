@@ -340,7 +340,7 @@ export const atividades: Atividade[] = [
       'Um bom README permite que outra pessoa rode o projeto sem dúvidas.',
     evidencia:
       'Card 27 abrindo a documentação do projeto.',
-    link: 'https://github.com/Marinho2005/faculdade',
+    link: 'https://github.com/Marinho2005/exercicio-faculdade',
   },
   {
     id: 28,
@@ -365,7 +365,7 @@ export const atividades: Atividade[] = [
     aprendizagem:
       'git push publica o histórico e habilita trabalho em equipe.',
     evidencia: 'Card 29 contendo o link do repositório remoto.',
-    link: 'https://github.com/Marinho2005/faculdade',
+    link: 'https://github.com/Marinho2005/exercicio-faculdade',
   },
   {
     id: 30,

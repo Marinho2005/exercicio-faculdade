@@ -19,7 +19,7 @@ Portfólio acadêmico de Victor Marinho com 30 atividades sobre HTML, CSS, React
 ## Como executar
 
 ```bash
-git clone git@github.com:Marinho2005/faculdade.git
+git clone git@github.com:Marinho2005/exercicio-faculdade.git
 cd faculdade
 npm install
 npm run dev
@@ -60,7 +60,7 @@ src/
 
 ## Links
 
-- [Repositório no GitHub](https://github.com/Marinho2005/faculdade)
+- [Repositório no GitHub](https://github.com/Marinho2005/exercicio-faculdade)
 - [Aplicação publicada na Vercel](https://exercicio-faculdade.vercel.app/)
 - [Perfil do autor no GitHub](https://github.com/Marinho2005)
 
