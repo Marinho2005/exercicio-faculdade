@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { atividades } from '../data/atividades'
 import CardAtividade from './CardAtividade'
+import ContadorProgresso from './ContadorProgresso'
 
 const tecnologias = ['Todas', 'Git', 'HTML', 'CSS', 'React', 'Vercel'] as const
 type FiltroTecnologia = (typeof tecnologias)[number]
@@ -8,6 +9,12 @@ type FiltroTecnologia = (typeof tecnologias)[number]
 function SecaoAtividades() {
   const [filtro, setFiltro] = useState<FiltroTecnologia>('Todas')
   const [termo, setTermo] = useState('')
+
+  /* progresso é derivado do array original — nada foi estimado/chutado */
+  const totalAtividades = atividades.length
+  const concluidas = atividades.filter(
+    (atividade) => atividade.status === 'Concluída',
+  ).length
 
   /* normalização da busca: compara tudo em caixa baixa, sem tocar no array original */
   const termoNormalizado = termo.trim().toLowerCase()
@@ -32,6 +39,8 @@ function SecaoAtividades() {
     <section id="atividades" aria-labelledby="titulo-atividades">
       <div className="container">
         <h2 id="titulo-atividades">Atividades</h2>
+
+        <ContadorProgresso total={totalAtividades} concluidas={concluidas} />
 
         <div className="busca-campo">
           <label className="busca-rotulo" htmlFor="busca-atividade">
