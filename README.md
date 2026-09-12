@@ -75,6 +75,22 @@ git push -u origin main
 git push origin v1.0.0
 ```
 
+## Publicação na Vercel
+
+1. Acesse [vercel.com](https://vercel.com/) e entre com a conta vinculada ao GitHub.
+2. Selecione **Add New > Project** e importe `Marinho2005/faculdade`.
+3. Mantenha o framework **Vite**, o comando de build `npm run build` e o diretório de saída `dist`.
+4. Clique em **Deploy** e teste navegação, filtros, busca, modal, formulário e tema na URL publicada.
+5. Substitua o campo pendente na seção Links e o link da atividade 30 pela URL real.
+
+## Relato final
+
+- Combinar busca e filtro sem alterar os dados originais: resolvi criando listas derivadas com `filter`.
+- Tornar o modal utilizável por teclado: adicionei foco inicial, fechamento por Escape e retorno ao botão acionador.
+- Manter o tema entre sessões: sincronizei o atributo `data-tema` do HTML com o `localStorage`.
+
+Minha atividade favorita foi o modal de detalhes, porque reuniu estado React, eventos, conteúdo dinâmico e acessibilidade em uma interação completa.
+
 ## Autor
 
 Victor Marinho, estudante de Desenvolvimento Web, 3º período.
