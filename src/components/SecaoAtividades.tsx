@@ -46,22 +46,30 @@ function SecaoAtividades() {
   return (
     <section id="atividades" aria-labelledby="titulo-atividades">
       <div className="container">
-        <h2 id="titulo-atividades">Atividades</h2>
+        <div className="secao-cabecalho">
+          <div>
+            <span className="secao-etiqueta">Minha jornada</span>
+            <h2 id="titulo-atividades">Atividades e projetos</h2>
+          </div>
+          <p>Uma coleção prática do que venho construindo e aprendendo em desenvolvimento web.</p>
+        </div>
 
-        <ContadorProgresso total={totalAtividades} concluidas={concluidas} />
-
-        <div className="busca-campo">
-          <label className="busca-rotulo" htmlFor="busca-atividade">
-            Buscar atividade
-          </label>
-          <input
-            id="busca-atividade"
-            className="busca-input"
-            type="search"
-            placeholder="Buscar por título ou descrição…"
-            value={termo}
-            onChange={(evento) => setTermo(evento.target.value)}
-          />
+        <div className="atividades-painel">
+          <ContadorProgresso total={totalAtividades} concluidas={concluidas} />
+          <div className="busca-campo">
+            <label className="sr-only" htmlFor="busca-atividade">
+              Buscar atividade
+            </label>
+            <span className="busca-icone" aria-hidden="true">⌕</span>
+            <input
+              id="busca-atividade"
+              className="busca-input"
+              type="search"
+              placeholder="Buscar atividade..."
+              value={termo}
+              onChange={(evento) => setTermo(evento.target.value)}
+            />
+          </div>
         </div>
 
         <div className="filtros" role="group" aria-label="Filtrar por tecnologia">

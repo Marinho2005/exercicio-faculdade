@@ -1,29 +1,40 @@
-import hero from '../assets/hero.png'
-import TemaBotao from './TemaBotao'
+import avatar from '../assets/Avatar Masculino em Círculo Azul Navy.png'
 
 function Cabecalho() {
   return (
-    <header className="cabecalho">
+    <header id="inicio" className="cabecalho">
       <div className="container cabecalho-conteudo">
-        <img
-          className="cabecalho-avatar"
-          src={hero}
-          alt="Ilustração do autor no topo do portfólio"
-        />
         <div className="cabecalho-texto">
-          <h1>Victor Marinho</h1>
-          <p className="cabecalho-curso">Desenvolvimento Web · 3º período</p>
+          <span className="cabecalho-etiqueta">
+            <span aria-hidden="true" /> Disponível para aprender e colaborar
+          </span>
+          <p className="cabecalho-saudacao">Olá, eu sou</p>
+          <h1>Victor Marinho<span>.</span></h1>
+          <p className="cabecalho-curso">Estudante de Desenvolvimento Web</p>
           <p className="cabecalho-descricao">
-            Portfólio com as 30 atividades de HTML, CSS, React, Git e Vercel.
+            Transformo aprendizado em projetos reais, construindo experiências
+            digitais simples, acessíveis e bem resolvidas.
           </p>
           <div className="grupo-botoes">
-            <TemaBotao />
-            <a className="botao" href="#atividades">
-              Ver atividades
+            <a className="botao botao-primario" href="#atividades">
+              Ver meus projetos <span aria-hidden="true">↗</span>
             </a>
             <a className="botao-secundario" href="#sobre">
               Sobre mim
             </a>
+          </div>
+        </div>
+        <div className="avatar-moldura">
+          <span className="avatar-detalhe avatar-detalhe-um" />
+          <span className="avatar-detalhe avatar-detalhe-dois" />
+          <img
+            className="cabecalho-avatar"
+            src={avatar}
+            alt="Avatar ilustrado de Victor Marinho"
+          />
+          <div className="avatar-selo">
+            <strong>30</strong>
+            <span>atividades</span>
           </div>
         </div>
       </div>

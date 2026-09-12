@@ -1,7 +1,12 @@
+import TemaBotao from './TemaBotao'
+
 function Navegacao() {
   return (
     <nav className="navegacao" aria-label="Navegação principal">
-      <div className="container">
+      <div className="container navegacao-conteudo">
+        <a className="marca" href="#inicio" aria-label="Victor Marinho — início">
+          VM<span>.</span>
+        </a>
         <ul className="navegacao-lista">
           <li>
             <a href="#inicio">Início</a>
@@ -16,6 +21,7 @@ function Navegacao() {
             <a href="#contato">Contato</a>
           </li>
         </ul>
+        <TemaBotao />
       </div>
     </nav>
   )

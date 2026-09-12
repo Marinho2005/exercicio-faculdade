@@ -4,9 +4,10 @@ function Sobre() {
   return (
     <section id="sobre" aria-labelledby="titulo-sobre">
       <div className="container">
-        <h2 id="titulo-sobre">Sobre mim</h2>
         <div className="sobre-conteudo">
-          <div>
+          <div className="sobre-introducao">
+            <span className="secao-etiqueta">Um pouco sobre mim</span>
+            <h2 id="titulo-sobre">Código com propósito, evolução constante.</h2>
             <p className="texto-sobre">
               Sou Victor Marinho, estudante de Desenvolvimento Web no 3º período. Este portfólio registra minha evolução prática em 30 atividades, desde a estrutura semântica até a publicação da aplicação.
             </p>
@@ -17,11 +18,12 @@ function Sobre() {
             </ul>
           </div>
           <div className="sobre-card">
-            <h3>Como trabalho</h3>
-            <p>Priorizo código simples, acessível, responsivo e versionado em etapas pequenas.</p>
-            <p>
-              <a href="https://github.com/Marinho2005" target="_blank" rel="noreferrer">Ver perfil no GitHub</a>
-            </p>
+            <span className="sobre-card-icone" aria-hidden="true">⌘</span>
+            <h3>Como eu trabalho</h3>
+            <p>Priorizo código simples, acessível e responsivo, sempre evoluindo em etapas pequenas e bem versionadas.</p>
+            <a href="https://github.com/Marinho2005" target="_blank" rel="noreferrer">
+              Ver perfil no GitHub <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
       </div>

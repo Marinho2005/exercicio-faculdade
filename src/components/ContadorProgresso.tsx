@@ -9,9 +9,10 @@ function ContadorProgresso({ total, concluidas }: PropsContadorProgresso) {
 
   return (
     <div className="progresso">
-      <p className="progresso-texto">
-        {concluidas} de {total} atividades concluídas
-      </p>
+      <div className="progresso-info">
+        <p className="progresso-texto">Progresso geral</p>
+        <strong className="progresso-porcentagem">{porcentagem}%</strong>
+      </div>
       <div
         className="progresso-barra"
         role="progressbar"
@@ -23,6 +24,7 @@ function ContadorProgresso({ total, concluidas }: PropsContadorProgresso) {
       >
         <span className="progresso-preenchimento" style={{ width: `${porcentagem}%` }} />
       </div>
+      <small>{concluidas} de {total} atividades concluídas</small>
     </div>
   )
 }

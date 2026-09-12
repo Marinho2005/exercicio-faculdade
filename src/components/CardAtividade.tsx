@@ -29,25 +29,27 @@ function CardAtividade({
 
   return (
     <li className="card-atividade">
-      <span className="card-numero">{numeroFormatado}</span>
-      <h3>{titulo}</h3>
-      <p className="card-descricao">{descricao}</p>
-      <div className="card-metadados">
-        <span
-          className={`card-status card-status-${status.toLowerCase()}`}
-        >
+      <div className="card-topo">
+        <span className="card-numero">{numeroFormatado}</span>
+        <span className={`card-status card-status-${status.toLowerCase().replace(' ', '-')}`}>
           {rotulosStatus[status]}
         </span>
-        <span className="card-tecnologia">{tecnologia}</span>
       </div>
-      {link && (
-        <a className="card-link" href={link} target="_blank" rel="noreferrer">
-          Repositório
-        </a>
-      )}
-      <button className="card-botao" type="button" onClick={onVer}>
-        Ver atividade
-      </button>
+      <h3>{titulo}</h3>
+      <p className="card-descricao">{descricao}</p>
+      <div className="card-rodape">
+        <span className="card-tecnologia">{tecnologia}</span>
+        <div className="card-acoes">
+          {link && (
+            <a className="card-link" href={link} target="_blank" rel="noreferrer">
+              Repo
+            </a>
+          )}
+          <button className="card-botao" type="button" onClick={onVer} aria-label={`Ver detalhes de ${titulo}`}>
+            Ver <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
     </li>
   )
 }

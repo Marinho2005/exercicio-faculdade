@@ -10,24 +10,29 @@ function App() {
   return (
     <>
       <a className="pular-para" href="#conteudo-principal">Pular para o conteúdo principal</a>
-      <Cabecalho />
       <Navegacao />
+      <Cabecalho />
       <main id="conteudo-principal" tabIndex={-1}>
-        <section id="inicio" aria-labelledby="titulo-inicio">
-          <div className="container">
-            <h2 id="titulo-inicio">Início</h2>
-            <p>Bem-vindo ao meu portfólio de atividades.</p>
-          </div>
-        </section>
-
         <SecaoAtividades />
 
         <Sobre />
 
-        <section id="contato" aria-labelledby="titulo-contato">
-          <div className="container">
-            <h2 id="titulo-contato">Contato</h2>
-            <FormularioContato />
+        <section id="contato" className="secao-contato" aria-labelledby="titulo-contato">
+          <div className="container contato-layout">
+            <div className="contato-introducao">
+              <span className="secao-etiqueta">Vamos conversar</span>
+              <h2 id="titulo-contato">Tem uma ideia em mente?</h2>
+              <p>
+                Envie uma mensagem. Estou sempre aberto a novos projetos,
+                aprendizados e boas conversas sobre tecnologia.
+              </p>
+              <a className="contato-email" href="https://github.com/Marinho2005" target="_blank" rel="noreferrer">
+                github.com/<wbr />Marinho2005
+              </a>
+            </div>
+            <div className="contato-formulario">
+              <FormularioContato />
+            </div>
           </div>
         </section>
       </main>
