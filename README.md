@@ -64,6 +64,17 @@ src/
 - Aplicação na Vercel: será adicionada após a publicação
 - [Perfil do autor no GitHub](https://github.com/Marinho2005)
 
+## Versionamento
+
+O projeto usa a branch principal `main` e commits pequenos e descritivos. Para revisar o histórico e publicar a versão marcada:
+
+```bash
+git status
+git log --oneline
+git push -u origin main
+git push origin v1.0.0
+```
+
 ## Autor
 
 Victor Marinho, estudante de Desenvolvimento Web, 3º período.
