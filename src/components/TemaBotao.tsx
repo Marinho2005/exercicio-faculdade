@@ -12,7 +12,7 @@ function TemaBotao() {
 
   /* aplicar e persistir: não há sessão sem efeito; padrão respeitado */
   useEffect(() => {
-    document.documentElement.dataset.theme = tema
+    document.documentElement.dataset.tema = tema
     window.localStorage.setItem('tema', tema)
   }, [tema])
 

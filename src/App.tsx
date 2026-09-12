@@ -9,9 +9,10 @@ import './styles/global.css'
 function App() {
   return (
     <>
+      <a className="pular-para" href="#conteudo-principal">Pular para o conteúdo principal</a>
       <Cabecalho />
       <Navegacao />
-      <main>
+      <main id="conteudo-principal" tabIndex={-1}>
         <section id="inicio" aria-labelledby="titulo-inicio">
           <div className="container">
             <h2 id="titulo-inicio">Início</h2>

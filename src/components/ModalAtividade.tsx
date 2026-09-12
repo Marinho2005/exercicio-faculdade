@@ -11,6 +11,8 @@ function ModalAtividade({ atividade, aoFechar, focoRetorno }: PropsModalAtividad
   const botaoFechar = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
+    const overflowAnterior = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
     botaoFechar.current?.focus()
 
     function fecharComEscape(evento: KeyboardEvent) {
@@ -20,6 +22,7 @@ function ModalAtividade({ atividade, aoFechar, focoRetorno }: PropsModalAtividad
     document.addEventListener('keydown', fecharComEscape)
     return () => {
       document.removeEventListener('keydown', fecharComEscape)
+      document.body.style.overflow = overflowAnterior
       focoRetorno?.focus()
     }
   }, [aoFechar, focoRetorno])

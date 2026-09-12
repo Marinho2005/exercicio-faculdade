@@ -325,7 +325,8 @@ export const atividades: Atividade[] = [
     status: 'Concluída',
     aprendizagem:
       'Acessibilidade é um conjunto de verificações, não um único recurso.',
-    evidencia: 'Card 26 com a lista das verificações e correções feitas.',
+    evidencia:
+      'Verificações: headings em ordem, labels associados, alt descritivo, foco visível, contraste e navegação por teclado.',
   },
   {
     id: 27,
