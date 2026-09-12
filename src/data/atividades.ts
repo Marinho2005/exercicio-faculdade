@@ -361,7 +361,7 @@ export const atividades: Atividade[] = [
     descricao:
       'Associei o repositório remoto e enviei a branch main e a tag v1.0.0 ao GitHub.',
     tecnologia: 'Git',
-    status: 'Em andamento',
+    status: 'Concluída',
     aprendizagem:
       'git push publica o histórico e habilita trabalho em equipe.',
     evidencia: 'Card 29 contendo o link do repositório remoto.',
