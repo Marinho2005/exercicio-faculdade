@@ -2,6 +2,8 @@
 
 Portfólio acadêmico de Victor Marinho com 30 atividades sobre HTML, CSS, React, TypeScript, Git e publicação na Vercel. A interface permite filtrar e buscar atividades, acompanhar o progresso e abrir detalhes de cada etapa.
 
+![Preview do portfólio de Victor Marinho](./preview/portfolio-preview.png)
+
 ## Tecnologias
 
 - React 19
